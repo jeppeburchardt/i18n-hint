@@ -1,0 +1,55 @@
+{
+  "name": "i18n-hint",
+  "version": "1.0.0",
+  "description": "CLI tool to audit i18n key usage in Vue/TypeScript projects",
+  "type": "module",
+  "license": "BSD-3-Clause",
+  "author": "Jeppe Burchardt",
+  "homepage": "https://github.com/jeppeburchardt/i18n-hint#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeppeburchardt/i18n-hint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeppeburchardt/i18n-hint/issues"
+  },
+  "keywords": [
+    "i18n",
+    "vue",
+    "typescript",
+    "cli",
+    "lint",
+    "audit",
+    "translation"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "i18n-hint": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^8.0.0",
+    "@vue/compiler-dom": "^3.4.0",
+    "@vue/compiler-sfc": "^3.4.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.3.5",
+    "@types/node": "^22.19.15",
+    "semantic-release": "^24.2.9",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

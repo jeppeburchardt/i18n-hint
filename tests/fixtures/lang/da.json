@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "name": "Language file example",
+    "age": "old",
+    "component": {
+      "title": "Component title",
+      "name": "Component name"
+    }
+  },
+  "title": "This is a test",
+  "greeting": "Hello",
+  "only-in-da": "Only in Danish"
+}
